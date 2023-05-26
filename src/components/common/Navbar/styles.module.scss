@@ -9,6 +9,23 @@
   justify-content: space-between;
   align-items: center;
   padding: $sizeM $sizeXXL6;
+  height: 70px;
+  background-color: $dark-beige;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: $dark-beige;
+  padding: $sizeM $sizeXXL4;
+
+  .nav {
+    flex-direction: column;
+  }
 }
 
 .nav {
