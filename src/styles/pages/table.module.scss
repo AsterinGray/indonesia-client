@@ -45,7 +45,7 @@
   gap: $sizeS;
 }
 
-@include viewport($mobile) {
+@media only screen and (max-width: 768px) {
   .main {
     overflow-x: scroll;
   }

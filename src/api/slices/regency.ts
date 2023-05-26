@@ -10,8 +10,8 @@ export const provinceSlice = apiSlice.injectEndpoints({
     getRegencyById: query<RegencyType, number>({
       query: (id) => `regency/${id}`,
     }),
-    getCapitals: query<RegencyType[], void>({
-      query: () => `regency/capital`,
+    getRegencyByProvince: query<RegencyType[], number>({
+      query: (id) => `regency/province/${id}`,
     }),
     createRegency: mutation<RegencyType, ModifyRegency>({
       query: (body) => ({
@@ -50,8 +50,8 @@ export const provinceSlice = apiSlice.injectEndpoints({
 export const {
   useGetRegencyQuery,
   useGetRegencyByIdQuery,
-  useGetCapitalsQuery,
   useCreateRegencyMutation,
   useDeleteRegencyMutation,
   useEditRegencyMutation,
+  useGetRegencyByProvinceQuery,
 } = provinceSlice;

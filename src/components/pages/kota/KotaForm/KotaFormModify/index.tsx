@@ -88,6 +88,18 @@ const KotaFormModify: React.FC<ModifyFormProps> = ({
     return selectedProvince?.id || 0;
   };
 
+  const renderProvinceOptions = () => {
+    if (provinces && provinces.length) {
+      return provinces.map((province) => (
+        <option key={province.id} value={province.id}>
+          {province.name}
+        </option>
+      ));
+    } else {
+      return <option disabled>Tidak ada Provinsi</option>;
+    }
+  };
+
   return (
     <>
       <h1>{type} Kota/Kabupaten</h1>
@@ -105,11 +117,7 @@ const KotaFormModify: React.FC<ModifyFormProps> = ({
           select={true}
           defaultValue={provinceId}
         >
-          {provinces?.map((province) => (
-            <option key={province.id} value={province.id}>
-              {province.name}
-            </option>
-          ))}
+          {renderProvinceOptions()}
         </InputGroup>
         <Button text="Submit" />
       </form>

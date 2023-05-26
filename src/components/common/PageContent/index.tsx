@@ -42,7 +42,7 @@ const PageContent: React.FC<Props> = ({ Header, Table, Modal }) => {
       {isModalVisible && (
         <Modal id={id} closeModal={closeModal} type={modalType} />
       )}
-      <ToastContainer theme="colored" />
+      <ToastContainer position="bottom-right" theme="colored" />
     </>
   );
 };
