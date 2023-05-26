@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock-api": "json-server -p 8080 --watch db.json"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -17,6 +19,12 @@
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.3",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "sass": "^1.62.1"
   }
 }

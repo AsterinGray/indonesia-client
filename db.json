@@ -1,0 +1,88 @@
+{
+  "province": [
+    {
+      "id": 1,
+      "name": "Sumatera Utara",
+      "capital": "Medan"
+    },
+    {
+      "id": 2,
+      "name": "Sumatera Utara",
+      "capital": "Medan"
+    },
+    {
+      "id": 3,
+      "name": "Sumatera Utara",
+      "capital": "Medan"
+    },
+    {
+      "id": 4,
+      "name": "Sumatera Utara",
+      "capital": "Medan"
+    }
+  ],
+  "regency": [
+    {
+      "id": 1,
+      "name": "Medan",
+      "capital": true,
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Medan",
+      "capital": true,
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Medan",
+      "capital": true,
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Medan",
+      "capital": true,
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Medan",
+      "capital": true,
+      "province": "Sumater Utara"
+    }
+  ],
+  "subdistrict": [
+    {
+      "id": 1,
+      "name": "Percut Sei Tuan",
+      "regency": "Deli Serdang",
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Percut Sei Tuan",
+      "regency": "Deli Serdang",
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Percut Sei Tuan",
+      "regency": "Deli Serdang",
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Percut Sei Tuan",
+      "regency": "Deli Serdang",
+      "province": "Sumater Utara"
+    },
+    {
+      "id": 1,
+      "name": "Percut Sei Tuan",
+      "regency": "Deli Serdang",
+      "province": "Sumater Utara"
+    }
+  ]
+}

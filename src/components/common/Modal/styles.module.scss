@@ -1,0 +1,33 @@
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/breakpoint.module.scss";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: $sizeM;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  border-radius: $sizeM;
+  width: $mobile;
+  padding: $sizeM;
+  z-index: 2;
+}
+
+.button {
+  position: absolute;
+  top: $sizeM;
+  right: $sizeM;
+  > img {
+    cursor: pointer;
+  }
+}

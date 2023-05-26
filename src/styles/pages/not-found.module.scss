@@ -1,0 +1,20 @@
+@import "@/styles/common/size.module.scss";
+
+.not-found {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin: 0 0 $sizeS 0;
+    font-size: $sizeXXL4;
+  }
+
+  p {
+    margin: 0;
+    font-size: $sizeL;
+  }
+}

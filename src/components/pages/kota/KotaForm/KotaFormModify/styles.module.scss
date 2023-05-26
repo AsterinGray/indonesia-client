@@ -1,0 +1,33 @@
+@import "@/styles/common/size.module.scss";
+
+.form {
+  padding-bottom: $sizeL;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+
+  > label {
+    font-weight: bold;
+    margin-bottom: $sizeS;
+  }
+}
+
+.input {
+  display: flex;
+  gap: $sizeXXL1;
+
+  label,
+  input {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  div {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: $sizeS;
+  }
+}

@@ -1,0 +1,30 @@
+@import "@/styles/common/color.module.scss";
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/breakpoint.module.scss";
+
+@import "@/styles/mixins/viewport.module.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $sizeM $sizeXXL6;
+}
+
+.nav {
+  display: flex;
+  gap: $sizeM;
+  font-weight: bold;
+}
+
+@include viewport($tablet) {
+  .header {
+    padding: $sizeM $sizeXXL4;
+  }
+}
+
+@include viewport($mobile) {
+  .header {
+    padding: $sizeM;
+  }
+}

@@ -1,0 +1,5 @@
+@import "@/styles/pages/table.module.scss";
+
+.trow {
+  grid-template-columns: 50px 1fr 200px;
+}

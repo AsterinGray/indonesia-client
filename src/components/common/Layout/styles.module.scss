@@ -1,0 +1,20 @@
+@import "@/styles/common/breakpoint.module.scss";
+@import "@/styles/common/size.module.scss";
+
+@import "@/styles/mixins/viewport.module.scss";
+
+.wrapper {
+  padding: $sizeM $sizeXXL6;
+}
+
+@include viewport($tablet) {
+  .wrapper {
+    padding: $sizeM $sizeXXL4;
+  }
+}
+
+@include viewport($mobile) {
+  .wrapper {
+    padding: $sizeM;
+  }
+}

@@ -1,0 +1,56 @@
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/breakpoint.module.scss";
+@import "@/styles/common/color.module.scss";
+
+@import "@/styles/mixins/viewport.module.scss";
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+.thead {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.trow {
+  display: grid;
+  padding: $sizeS 0;
+  text-align: center;
+
+  &:nth-child(even) {
+    background-color: $dark-beige;
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.info {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: $dark-beige;
+}
+
+.taction {
+  display: flex;
+  gap: $sizeS;
+}
+
+@include viewport($mobile) {
+  .main {
+    overflow-x: scroll;
+  }
+
+  .table {
+    width: $tablet;
+  }
+}

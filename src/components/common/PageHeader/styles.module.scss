@@ -1,0 +1,22 @@
+@import "@/styles/common/breakpoint.module.scss";
+@import "@/styles/common/size.module.scss";
+
+@import "@/styles/mixins/viewport.module.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@include viewport($mobile) {
+  .header {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: $sizeL;
+
+    h1 {
+      margin-bottom: $sizeM;
+    }
+  }
+}

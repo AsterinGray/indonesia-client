@@ -1,0 +1,7 @@
+@import "@/styles/common/size.module.scss";
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  gap: $sizeL;
+}

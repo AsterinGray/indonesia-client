@@ -1,0 +1,12 @@
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/breakpoint.module.scss";
+
+@import "@/styles/mixins/viewport.module.scss";
+
+.section {
+  overflow: hidden;
+
+  h1 {
+    font-size: $sizeXXL2;
+  }
+}

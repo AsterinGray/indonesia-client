@@ -1,0 +1,21 @@
+@import "../common/breakpoint.module.scss";
+
+@mixin viewport($breakpoint) {
+  @if $breakpoint==$desktopS {
+    @media only screen and (max-width: $desktopS) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$tablet {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$mobile {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}

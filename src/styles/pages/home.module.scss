@@ -1,0 +1,32 @@
+@import "@/styles/common/size.module.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  h1 {
+    font-size: $sizeXXL4;
+    margin: 0 0 $sizeS 0;
+  }
+
+  h4 {
+    font-size: $sizeL;
+    margin: 0;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: $sizeL;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

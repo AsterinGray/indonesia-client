@@ -1,0 +1,22 @@
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/color.module.scss";
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $sizeM;
+
+  label {
+    margin-bottom: $sizeS;
+    font-weight: bold;
+  }
+
+  input,
+  select {
+    border: 2px solid $gray;
+    border-radius: $sizeS;
+    padding: $sizeS;
+    outline: none;
+    font-size: $sizeL;
+  }
+}

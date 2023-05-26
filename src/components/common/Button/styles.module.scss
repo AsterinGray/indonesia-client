@@ -1,0 +1,15 @@
+@import "@/styles/common/size.module.scss";
+@import "@/styles/common/color.module.scss";
+
+.button {
+  padding: $sizeS $sizeXL;
+  background-color: $blue;
+  border-radius: $sizeS;
+  border: none;
+  cursor: pointer;
+  color: black;
+
+  &-alt {
+    background-color: $red;
+  }
+}
